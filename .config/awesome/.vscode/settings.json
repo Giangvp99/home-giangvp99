@@ -1,0 +1,25 @@
+{
+    "Lua.diagnostics.globals": [
+        "awesome",
+        "client",
+        "modkey",
+        "shift",
+        "ctrl",
+        "alt",
+        "terminal",
+        "editor",
+        "editor_cmd",
+        "leftclick",
+        "midclick",
+        "rightclick",
+        "scrolldown",
+        "scrollup",
+        "sidedownclick",
+        "sideupclick",
+        "screen",
+        "colors",
+        "theme",
+        "mouse",
+        "tag"
+    ]
+}

@@ -1,0 +1,26 @@
+/*
+* AUTHOR: Luca
+*/
+ 
+configuration{
+    modi: "run,drun,filebrowser";
+    font:                        "FiraCode Nerd Font 10";
+    prompt-font:                 "FiraCode Nerd Font 10";
+
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    disable-history: false;
+    hide-scrollbar: false;
+    display-drun: "  ";
+    display-run: "  ";
+    display-window: " 﩯 ";
+    display-filebrowser: "  ";
+    sidebar-mode: true;
+    opacity: 80;
+    kb-cancel:              "ctrl+c"; 
+}
+
+@theme "~/.config/rofi/themes/luncher.rasi"
+
