@@ -107,3 +107,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/.dotnet/tools:$PATH
 
 eval "$(starship init zsh)"
+
+alias luamake=/home/giangvp99/.clone/lua-language-server/3rd/luamake/luamake

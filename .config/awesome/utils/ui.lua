@@ -8,7 +8,7 @@ local ui = {}
 
 -- Move local client
 ui.move_client = function(c, direction)
-    -- If client is floating, move to edge
+  -- If client is floating, move to edge
     if c.floating or (awful.layout.get(mouse.screen) == awful.layout.suit.floating) then
         -- If maxed layout then swap windows
         if direction == "up" then

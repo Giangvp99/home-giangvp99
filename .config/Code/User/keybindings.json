@@ -4,7 +4,7 @@
   {
     "key": "space",
     "command": "whichkey.show",
-    "when": "explorerViewletFocus"
+    "when": "!terminalFocus && !textInputFocus && !inputFocus"
   },
   {
     "key": "alt+space",
@@ -31,19 +31,9 @@
 
   // Explorer
   {
-    "key": "alt+e",
-    "command": "workbench.view.explorer",
-    "when": "!explorerViewletVisible"
-  },
-  {
-    "key": "alt+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "explorerViewletVisible"
-  },
-  {
     "key": "a",
     "command": "explorer.newFile",
-    "when": "filesExplorerFocus && textInputFocus"
+    "when": "filesExplorerFocus && !inputFocus"
   },
   {
     "key": "shift+a",
@@ -52,23 +42,13 @@
   },
   {
     "key": "d",
-    "command": "deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+    "command": "moveFileToTrash",
+    "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "delete",
-    "command": "-deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "shift+d",
-    "command": "deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "shift+delete",
-    "command": "-deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    "command": "-moveFileToTrash",
+    "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "r",
@@ -267,28 +247,6 @@
     "key": "shift+escape",
     "command": "-hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
-  },
-
-  // file browser
-  {
-    "key": "l",
-    "command": "file-browser.stepIn",
-    "when": "inFileBrowser"
-  },
-  {
-    "key": "right",
-    "command": "-file-browser.stepIn",
-    "when": "inFileBrowser"
-  },
-  {
-    "key": "h",
-    "command": "file-browser.stepOut",
-    "when": "inFileBrowser"
-  },
-  {
-    "key": "left",
-    "command": "-file-browser.stepOut",
-    "when": "inFileBrowser"
   },
 
   // Exit

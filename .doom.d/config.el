@@ -67,6 +67,16 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+(use-package! tree-sitter
+  :defer t
+  :hook ((python-mode json-mode js-mode js2-mode typescript-mode) . tree-sitter-mode)
+  :config
+  (setq tree-sitter-hl-mode t))
+
+(after! lsp-mode
+  (setq lsp-pyright-typechecking-mode "off")
+  ;; (setq lsp-clients-typescript-init-opts '(:importModuleSpecifierPreference "non-relative"))
+  (lsp-make-interactive-code-action organize-imports-ts "source.organizeImports.ts-ls"))
 
 ;; Manually edit .local/custom.el will break doom updates
 (when (file-directory-p custom-file)

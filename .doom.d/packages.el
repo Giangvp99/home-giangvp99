@@ -22,6 +22,7 @@
 ;  :recipe (:host github :repo "username/repo"
 ;           :files ("some-file.el" "src/lisp/*.el")))
 
+(package! vscode-dark-plus-theme)
 ;; If you'd like to disable a package included with Doom, you can do so here
 ;; with the `:disable' property:
 ;(package! builtin-package :disable t)

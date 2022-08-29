@@ -87,5 +87,5 @@ key_bindings:
   - { key: F11, mods: None, action: ToggleFullscreen }
   - { key: Paste, mods: None, action: Paste }
   - { key: Copy, mods: None, action: Copy }
-  - { key: Space, mods: Control, action: ToggleViMode }
+  - { key: Space, mods: Control|Shift, action: ToggleViMode }
   - { key: L, mods: Control, action: ClearLogNotice }

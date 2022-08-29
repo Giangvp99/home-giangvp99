@@ -76,6 +76,12 @@
       }
     },
     {
+      "key": "e",
+      "name": "Explorer",
+      "type": "commands",
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
       "key": "b",
       "name": "Buffers/Editors",
       "type": "bindings",
