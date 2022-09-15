@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/.dotnet/tools:$PATH
+export PATH=$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/.dotnet/tools:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
 
 eval "$(starship init zsh)"
 

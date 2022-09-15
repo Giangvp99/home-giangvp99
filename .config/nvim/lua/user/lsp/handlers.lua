@@ -79,7 +79,6 @@ local function attach_navic(client, bufnr)
 	if not status_ok then
 		return
 	end
-  vim.notify("hi")
 	navic.attach(client, bufnr)
 end
 
